@@ -67,7 +67,55 @@ function attaqueAleatoire(min, max){
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/*bouton_attaque.onclick = function bouton_atk(){
+var attaque_monstre1 = function(){
+	var atk_monstre_1 = entierAleatoire(1,4);
+	if (attaque_monstre1 == 1){
+		pvPerso1 = pvPerso1 - 28;
+	}
+	if (attaque_monstre1 == 2){
+		pvPerso2 = pvPerso2 - 28;
+	}
+	if (attaque_monstre1 == 3){
+		pvPerso3 = pvPerso3 - 28;
+	}
+	if (attaque_monstre1 == 4){
+		pvPerso4 = pvPerso4 - 28;
+	}
+}
+
+var attaque_monstre2 = function(){
+	var atk_monstre_2 = entierAleatoire(1,4);
+	if (attaque_monstre2 == 1){
+		pvPerso1 = pvPerso1 - 28;
+	}
+	if (attaque_monstre2 == 2){
+		pvPerso2 = pvPerso2 - 28;
+	}
+	if (attaque_monstre2 == 3){
+		pvPerso3 = pvPerso3 - 28;
+	}
+	if (attaque_monstre2 == 4){
+		pvPerso4 = pvPerso4 - 28;
+	}
+}
+
+var attaque_monstre3 = function(){
+	var atk_monstre_3 = entierAleatoire(1,4);
+	if (attaque_monstre3 == 1){
+		pvPerso1 = pvPerso1 - 28;
+	}
+	if (attaque_monstre3 == 2){
+		pvPerso2 = pvPerso2 - 28;
+	}
+	if (attaque_monstre3 == 3){
+		pvPerso3 = pvPerso3 - 28;
+	}
+	if (attaque_monstre3 == 4){
+		pvPerso4 = pvPerso4 - 28;
+	}
+}
+
+bouton_attaque.onclick = function bouton_atk(){
 	var choix_joueur = prompt("Quel ennemie voulez-vous attaquer ? 1 : Dragon de Feu - 2 : Roi des Mages - 3 : Dragon de Jade");
 	if (choix_joueur == 1){
 		vie_monstre_1 = vie_monstre_1 - atk_heros_1;
