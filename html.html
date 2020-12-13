@@ -1,0 +1,70 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="css.css">
+	<script type="text/javascript" src="monjavascript.js"></script>
+<section id="combat"><strong>Affrontez et Terrassez les Monstres !</strong></section>
+ <section id="actions">
+	<div id="actionsText">A <span class="personage"><strong>Dédé</strong></span> de jouer !</div>
+	<button id="attaque" onclick>Attaquer</button><br>
+	<button id="defense" onclick>Se Protéger</button><br>
+	<button id="speciale" onclick>Action Spéciale</button>
+</section>
+
+<section class="message_centre" id="message_au_centre">
+  <div class="message1" id="message_attaque" style="display:none;">Vous attaquez un Monstre</div>
+  <div class="message2" id="message_defense" style="display:none;">Vous choisissez de vous défendre</div>
+  <div class="message3" id="message_speciale" style="display:none;">Vous lancez votre technique spéciale :</div>
+
+<section id="perso1">
+  <div id="nom1"><strong>Dédé</strong></div>         <!--caractéristiques du personnage-->
+  <div id="segment">----------</div>
+  <div class="a"><span class="pv1">150</span> PV</div>
+  <div class="b"><span class="mana1">100</span> Mana</div>
+</section>
+
+<section id="perso2">
+  <div id="nom2"><strong>Gégé</strong></div>                   <!--caractéristiques du personnage-->
+  <div id="segment">----------</div>
+  <div class="c"><span class="pv2">150</span> PV</div>
+  <div class="d"><span class="mana2">100</span> Mana</div>
+</section>
+
+<section id="perso3">
+  <div id="nom3"><strong>Bébère</strong></div>                    <!--caractéristiques du personnage-->
+  <div id="segment">----------</div>
+  <div class="e"><span class="pv3">150</span> PV</div>
+  <div class="f"><span class="mana3">100</span> Mana</div>
+</section>
+
+<section id="perso4">
+  <div id="nom4"><strong>Dieu</strong></div>             <!--caractéristiques du personnage-->
+  <div id="segment">----------</div>
+  <div class="g"><span class="pv4">500</span> PV</div>
+  <div class="h"><span class="mana4">500</span> Mana</div>
+</section>
+
+<section id="monstres">                           <!--appel des monstres-->
+  <div onmouseover="showStat1()" onmouseout="showStat1()" id="monstre1"></div>
+  <div onmouseover="showStat2()" onmouseout="showStat2()" id="monstre2"></div>
+  <div onmouseover="showStat3()" onmouseout="showStat3()" id="monstre3"></div>
+</section>
+
+<section id="bulleMonstre1" style="display:none;"> 
+  <div id="nom1"><strong>Dragon du Feu</strong></div>         <!--caractéristiques du monstre-->
+  <div id="segment">----------</div>
+  <div class="i"><span class="pvMonstre1">200</span> PV</div>
+</section>
+
+<section id="bulleMonstre2" style="display:none;"> 
+  <div id="nom1"><strong>Roi des Mages</strong></div>         <!--caractéristiques du monstre-->
+  <div id="segment">----------</div>
+  <div class="j"><span class="pvMonstre1">200</span> PV</div>
+</section>
+
+<section id="bulleMonstre3" style="display:none;"> 
+  <div id="nom1"><strong>Dragon de Jade</strong></div>         <!--caractéristiques du monstre-->
+  <div id="segment">----------</div>
+  <div class="k"><span class="pvMonstre1">200</span> PV</div>
+</section>
+</body>
+</html>
