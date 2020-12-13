@@ -63,6 +63,10 @@ function showStat3() {
 	}
 }
 
+function attaqueAleatoire(min, max){
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 /*bouton_attaque.onclick = function bouton_atk(){
 	var choix_joueur = prompt("Quel ennemie voulez-vous attaquer ? 1 : Dragon de Feu - 2 : Roi des Mages - 3 : Dragon de Jade");
 	if (choix_joueur == 1){
