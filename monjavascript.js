@@ -19,6 +19,9 @@ var atk_heros_4 = document.getElementById("atk4");
 var vie_monstre_1 = document.getElementById("pvMonstre1");
 var vie_monstre_2 = document.getElementById("pvMonstre2");
 var vie_monstre_3 = document.getElementById("pvMonstre3");
+var monstre_1 = document.getElementById("Monstre1");
+var monstre_2 = document.getElementById("Monstre2");
+var monstre_3 = document.getElementById("Monstre3");
 pvPerso1 = 150
 pvPerso2 = 150
 pvPerso3 = 150
@@ -115,12 +118,14 @@ var attaque_monstre3 = function(){
 	}
 }
 
-bouton_attaque.onclick = function bouton_atk(){
-	var choix_joueur = prompt("Quel ennemie voulez-vous attaquer ? 1 : Dragon de Feu - 2 : Roi des Mages - 3 : Dragon de Jade");
-	if (choix_joueur == 1){
+bouton_attaque.onclick = function bouton_atk1(){
+	if (monstre_1.onclick){
 		vie_monstre_1 = vie_monstre_1 - atk_heros_1;
+	}
 	if (choix_joueur == 2){
 		vie_monstre_2 = vie_monstre_2 - atk_heros_2;
+	}
 	if (choix_joueur == 3){
 		vie_monstre_3 = vie_monstre_3 - atk_heros_3;
+	}
 }
