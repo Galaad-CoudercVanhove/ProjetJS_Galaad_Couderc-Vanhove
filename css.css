@@ -25,34 +25,12 @@ body{
 	align-items: center;
 	border: 2mm ridge rgba(255, 255, 255, .6);
 	background-color: rgba(166,166,166,.5);
-	height: 260px;
+	height: 240px;
 	width: 250px;	
 }
 
 /*---------------messages adressé au joueur---------------*/
-#message_attaque{
-	display: flex;
-	position: absolute;
-	background-color: rgba(166,166,166,.5);
-	border: 2mm ridge rgba(255, 255, 255, .6);
-	font-size: 25px;
-	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
-	top: 80px;
-	left: 300px;
-}
-
-#message_defense{
-	display: flex;
-	position: absolute;
-	background-color: rgba(166,166,166,.5);
-	border: 2mm ridge rgba(255, 255, 255, .6);
-	font-size: 25px;
-	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
-	top: 80px;
-	left: 300px;
-}
-
-#message_speciale{
+#message_action{
 	display: flex;
 	position: absolute;
 	background-color: rgba(166,166,166,.5);
@@ -237,7 +215,7 @@ body{
   border-radius: 6px;
   font-family: Arial;
   color: #000000;
-  font-size: 25px;
+  font-size: 15px;
   padding: 10px 20px 10px 20px;
   border: solid #000000 2px;
   text-decoration: none;
@@ -255,7 +233,7 @@ body{
   border-radius: 6px;
   font-family: Arial;
   color: #000000;
-  font-size: 25px;
+  font-size: 15px;
   padding: 10px 20px 10px 20px;
   border: solid #000000 2px;
   text-decoration: none;
@@ -273,7 +251,7 @@ body{
   border-radius: 6px;
   font-family: Arial;
   color: #000000;
-  font-size: 25px;
+  font-size: 15px;
   padding: 10px 20px 10px 20px;
   border: solid #000000 2px;
   text-decoration: none;
