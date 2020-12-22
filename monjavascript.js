@@ -73,7 +73,7 @@ function attaqueAleatoire(min, max){
 
 function victoire() {
 	if (vie_monstre_2 <= 0){
-		monstre_1.style.dsplay == 'none'
+		monstre_1.style.dsplay == 'none';
 	}
 }
 
@@ -134,5 +134,20 @@ bouton_attaque.onclick = function(){
 		else{
 			vie_monstre_2 = vie_monstre_2 - atk_heros_1;
 		}
+	}
+}
+
+function victoire() {
+	if (vie_monstre_2 <= 0){
+			info.innerHTML = "Vous avez terrassé le Roi des Mages";
+	}
+	if (vie_monstre_1 <= 0){
+			info.innerHTML = "Vous avez terrassé le Dragon de Feu";
+	}
+	if (vie_monstre_3 <= 0){
+			info.innerHTML = "Vous avez terrassé le Dragon de Jade";
+	}
+	if (vie_monstre_3 <= 0, vie_monstre_1 <= 0, vie_monstre_2 <= 0){
+			info.innerHTML = "Vous avez remporté ce combat";
 	}
 }
