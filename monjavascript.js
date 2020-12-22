@@ -35,7 +35,7 @@ atk_heros_2 = 27;
 atk_heros_3 = 27;
 atk_heros_4 = 100;
 var perso_tour = 1;
-var info = document.getElementById("message_attaque")
+var info = document.getElementById("message_action")
 
 function showStat1() {
 	var element = document.getElementById('bulleMonstre1');
@@ -134,6 +134,20 @@ bouton_attaque.onclick = function(){
 		else{
 			vie_monstre_2 = vie_monstre_2 - atk_heros_1;
 		}
+	}
+}
+
+bouton_defend.onclick = function(){
+	info.innerHTML = "Vous vous protégez de la prochaine attaque";
+	if (pvPerso1 > 0){
+		pvPerso1 = pvPerso1 + 12;
+	}
+}
+
+bouton_special.onclick = function(){
+	info.innerHTML = "Vous utilisez votre technique special : le soin";
+	if (pvPerso1 > 0, pvPerso1 < 108){
+		pvPerso1 = pvPerso1 + 42;
 	}
 }
 
