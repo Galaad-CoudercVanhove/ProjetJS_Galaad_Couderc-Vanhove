@@ -35,6 +35,7 @@ atk_heros_2 = 27;
 atk_heros_3 = 27;
 atk_heros_4 = 100;
 var perso_tour = 1;
+var info = document.getElementById("message_attaque")
 
 function showStat1() {
 	var element = document.getElementById('bulleMonstre1');
@@ -68,6 +69,12 @@ function showStat3() {
 
 function attaqueAleatoire(min, max){
 	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function victoire() {
+	if (vie_monstre_2 <= 0){
+		monstre_1.style.dsplay == 'none'
+	}
 }
 
 var attaque_monstre1 = function(){
@@ -118,14 +125,14 @@ var attaque_monstre3 = function(){
 	}
 }
 
-bouton_attaque.onclick = function bouton_atk1(){
-	if (monstre_1.onclick){
-		vie_monstre_1 = vie_monstre_1 - atk_heros_1;
-	}
-	if (choix_joueur == 2){
-		vie_monstre_2 = vie_monstre_2 - atk_heros_2;
-	}
-	if (choix_joueur == 3){
-		vie_monstre_3 = vie_monstre_3 - atk_heros_3;
+bouton_attaque.onclick = function(){
+	info.innerHTML = "Vous attaquez le Roi des Mages";
+	if (pvPerso1 > 0 && vie_monstre_1 > 0){
+		if (vie_monstre_2  <= atk_heros_1){
+			vie_monstre_2 = 0;
+		}
+		else{
+			vie_monstre_2 = vie_monstre_2 - atk_heros_1;
+		}
 	}
 }
