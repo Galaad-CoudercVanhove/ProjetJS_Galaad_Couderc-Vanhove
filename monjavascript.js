@@ -127,7 +127,7 @@ var attaque_monstre3 = function(){
 
 bouton_attaque.onclick = function(){
 	info.innerHTML = "Vous attaquez le Roi des Mages";
-	if (pvPerso1 > 0 && vie_monstre_1 > 0){
+	if (pvPerso1 > 0 && vie_monstre_2 > 0){
 		if (vie_monstre_2  <= atk_heros_1){
 			vie_monstre_2 = 0;
 		}
@@ -151,3 +151,23 @@ function victoire() {
 			info.innerHTML = "Vous avez remporté ce combat";
 	}
 }
+
+function defaite() {
+	if (pvPerso1 <= 0){
+			info.innerHTML = "Dédé est mort au combat";
+	}
+	if (pvPerso2 <= 0){
+			info.innerHTML = "Gégé est décédé lors de l'affrontement";
+	}
+	if (pvPerso3 <= 0){
+			info.innerHTML = "Bébère a surestimé ses capacités";
+	}
+	if (pvPerso4 <= 0){
+			info.innerHTML = "Dieu est tombé du ciel";
+	}
+	if (pvPerso1 <= 0, pvPerso2 <= 0, pvPerso3 <= 0, pvPerso4 <= 0){
+			info.innerHTML = "Vous avez perdu ce combat";
+	}
+}
+
+
